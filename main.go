@@ -101,7 +101,7 @@ func run(c *cli.Context) error {
 	secret := c.String("secret")
 	port := c.Uint("port")
 
-	logger.Debug().Str("user", user).Str("secret", secret).Msg("Configured credentials")
+	logger.Debug().Str("user", user).Msg("Configured credentials")
 
 	proxy := goproxy.NewProxyHttpServer()
 	if c.Bool("verbose") {
