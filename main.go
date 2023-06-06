@@ -82,7 +82,7 @@ func main() {
 
 func initLogger(ctx context.Context) *zerolog.Logger {
 	logger := zerolog.New(os.Stdout).With().Timestamp().Logger()
-	logger = logger.Level(zerolog.DebugLevel)
+	logger = logger.Level(zerolog.InfoLevel)
 	return &logger
 }
 
